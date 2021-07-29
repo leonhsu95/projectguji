@@ -16,9 +16,8 @@ You can view THE COLD DRIP here: [THE COLD DRIP]()
 
 ## Description
 
-THE COLD DRIP is a Coffee ECommerce MERN Website is a platform that sells a variety of coffee beans, blends and supplies.
-With the intent to mkae this website the all-n-one place for all things coffee, consumers can use this platform
-to purchase what they need to achieve making the perfect cup of coffee or even start up their own café.
+THE COLD DRIP is a Coffee ECommerce MERN Website that is a platform to sell all things coffee from bean varieties, blends and supplies.
+Consumers can use this platform as the all-in-one place to purchase what they need to achieve making the perfect cup of coffee or even start up their own café.
 The website also aims to be a coffee cultural hub, giving visitors access to resources to learn more about coffee and inform them about sales and discounts.
 
 
