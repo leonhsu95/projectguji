@@ -11,8 +11,8 @@
     "build": "cd client && npm run build"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Leon Hsu",
+  "license": "",
   "devDependencies": {
     "concurrently": "^5.3.0"
   }
