@@ -1,6 +1,6 @@
 # THE COLD DRIP COFFEE
 
-You can view THE COLD DRIP COFFEE here: [THE COLD DRIP]()
+You can view THE COLD DRIP COFFEE here: [THE COLD DRIP COFFEE]()
 
 ## Table of Contents
 
