@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
 
+function getDecimalNumber(val) { return (val/100); }
+function setDecimalNumber(val) { return (val*100); }
+
 const { Schema } = mongoose;
 
 const productSchema = new Schema({
@@ -17,7 +20,8 @@ const productSchema = new Schema({
   price: {
     type: Number,
     required: true,
-    min: 0.99
+    min: 0.99,
+    decimal: Schema.Types.Decimal128
   },
   quantity: {
     type: Number,

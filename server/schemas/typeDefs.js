@@ -28,6 +28,7 @@ const typeDefs = gql`
     lastName: String
     email: String
     orders: [Order]
+    admin: Boolean
   }
 
   type Checkout {
@@ -49,7 +50,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
+    addUser(firstName: String!, lastName: String!, email: String!, password: String!, admin: Boolean): Auth
     addOrder(products: [ID]!): Order
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     updateProduct(_id: ID!, quantity: Int!): Product
