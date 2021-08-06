@@ -9,7 +9,9 @@ import {
   UPDATE_CURRENT_CATEGORY,
   CLEAR_CART,
   TOGGLE_CART,
-  CLEAR_CATEGORY
+  UPDATE_SEARCH,
+  UPDATE_CURRENT_SEARCH,
+
 } from './actions';
 
 // Set initial states for all key defined actions from the below reducer function
@@ -19,6 +21,8 @@ const initialState = {
   certOpen: false,
   categories: [],
   currentCategory: '',
+  search: [],
+  currentSearch: '',
 };
 
 // The reducer is a function that accepts the current state and an action. It returns a new state based on that action.
@@ -94,6 +98,19 @@ export default function reducer (state = initialState, action){
       return {
         ...state,
         currentCategory: action.currentCategory,
+      };
+
+    // Search Bar to Update Current Product Name
+    case UPDATE_SEARCH:
+      return {
+        ...state,
+        search: [...action.search],
+      };
+
+    case UPDATE_CURRENT_SEARCH:
+      return {
+        ...state,
+        currentSearch: action.currentSearch,
       };
 
     // Return the state as is in the event that the `action.type` passed to our reducer was not accounted for by the developers

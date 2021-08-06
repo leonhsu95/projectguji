@@ -9,6 +9,7 @@ import {
 } from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
+// import SearchBar from '../SearchBar';
 
 function CategoryMenu() {
   // const [state, dispatch] = useStoreContext();
@@ -54,6 +55,10 @@ function CategoryMenu() {
   return (
     <div>
       <h2>Choose a Category:</h2>
+      {/* <SearchBar/> */}
+      <div className= "search-bar">
+            <input type="text" placeholder="Search..."></input>  
+      </div>  
       <button
           onClick={() => {
             handleClick();

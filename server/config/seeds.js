@@ -21,7 +21,7 @@ db.once('open', async () => {
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
       category:  categories[0]._id,
-      price: 30.00,
+      price: 29.00,
       quantity: 500
     },
     {
@@ -30,7 +30,7 @@ db.once('open', async () => {
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
       image: 'canned-coffee.jpg',
       category:  categories[0]._id,
-      price: 43.50,
+      price: 43.02,
       quantity: 500
     },
     {
@@ -39,12 +39,13 @@ db.once('open', async () => {
       description:
         'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
       image: 'toilet-paper.jpg',
-      price: 36.90,
+      price: 36.9,
       quantity: 20
     },
     
   ]);
 
+  console.log(products);
   console.log('products seeded');
 
   await User.deleteMany();

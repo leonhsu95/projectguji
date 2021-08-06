@@ -46,9 +46,13 @@ function ProductList() {
     );
   }
 
+  // Function to search by product name?
+  // If Category then search is gone.
+
   return (
     <div className="my-2">
       <h2>Our Products:</h2>
+      {/* If no search then display all, if search then display by name match */}
       {state.products.length ? (
         <div className="flex-row">
           {filterProducts().map((product) => (
@@ -57,7 +61,7 @@ function ProductList() {
               _id={product._id}
               image={product.image}
               name={product.name}
-              price={product.price}
+              price={parseFloat(product.price).toFixed(2)}
               quantity={product.quantity}
             />
           ))}
