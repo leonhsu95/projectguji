@@ -35,12 +35,14 @@ export const ADD_USER = gql`
     $lastName: String!
     $email: String!
     $password: String!
+    $admin : Boolean!
   ) {
     addUser(
       firstName: $firstName
       lastName: $lastName
       email: $email
       password: $password
+      admin: $admin
     ) {
       token
       user {
@@ -49,3 +51,11 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_PRODUCTS = gql`
+  mutation addProduct( $name: String!, $description: String!, $image: String!, $quantity: Int!, $price: Float!, $category: String!){
+  addProduct(name: $name, description: $description, image: $image, quantity: $quantity, price: $price, category: $category)
+  }
+
+`;
+

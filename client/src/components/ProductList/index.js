@@ -13,7 +13,7 @@ function ProductList() {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
 
-  const { currentCategory, currentSearch } = state;
+  const { currentCategory } = state;
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
@@ -46,14 +46,14 @@ function ProductList() {
     );
 
   // Function to search by product name?
-  function filterSearch(){
-    if(!currentSearch){
-      return state.products;
-    }
-    return state.products.filter(
-      (product) => product.name.toLowerCase() === currentSearch
-    );
-  }
+  // function filterSearch(){
+  //   if(!currentSearch){
+  //     return state.products;
+  //   }
+  //   return state.products.filter(
+  //     (product) => product.name.toLowerCase() === currentSearch
+  //   );
+  // }
   // If Category then search is gone.
   }
 
