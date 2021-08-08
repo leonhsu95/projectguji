@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Jug from "../Photos/hario-cold-brew-jug.png";
 
 
 const ssclass = `supplies-section-container wrapper`;
@@ -6,15 +8,15 @@ const ssclass = `supplies-section-container wrapper`;
 function Supplies(){
     return (
         <div id="supplies-section">
-        <h2 className="wrapper">Our Supplies</h2>
-        <p className="wrapper">Selection of Fragrant Aromatic supplies from around the World</p>
-        <div className={ssclass}> 
+       <div className={ssclass}> 
             <div className="supplies-section-picture">
-                <p>Picture</p>
+                <img src={Jug} alt="Hario Cold Brew Jug"></img>
             </div>
             <div className="supplies-section-text">
-                <p>Some Promo Text</p>
-                <button id="supplies-section-button">View Selection</button>
+                
+                <h2 className="wrapper">Our Supplies</h2>
+                <p className="wrapper">We have a selection of World Class brands <br></br>that will help you make the best cup of coffee <br></br> of all style and types</p>
+                <Link to="/shop"><button id="supplies-section-button">View Selection</button></Link>
             </div>
         </div>
             

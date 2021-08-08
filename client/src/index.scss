@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  overflow-x:hidden;
+}
+
 .wrapper{
   display: block;
   margin:  0 auto;
@@ -40,44 +44,104 @@ header{
 {
   display: flex;
   flex-direction: row;
-  outline: 1px orange solid;
+  // outline: 1px orange solid;
   margin: 0 auto;
+  padding: 0 10px;
   width: 100%;
   height: 70rem;
+  // max-width: 1700px;
 
   .hero-left{
     display: block;
-    outline: 3px green solid;
+    // outline: 3px green solid;
     width: 50%;
+    padding-left: 60px;
+    background-color: white;
+    
+    #heading{
+      font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: relative;
+      top: 20%;
+      font-size: 4.5rem;
+    }
+  
+    #subtitle{
+      font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: relative;
+      top: 20%;
+      font-size: 1.8rem;
+      max-width: 550px;
+      margin-top: 30px;
+      line-height: 1.8;
+    }
+  
+    .line{
+      position: relative;
+      top: 40%;
+      width: 4px;
+      height: 120px;
+      background-color: orange;
+    }
+
+    .scroll-text{
+      display: inline-block;
+      position: relative;
+      padding-top: 20px;
+      padding-left: 30px;
+    }
   }
 
   .hero-right{
     display: block;
-    outline: 1px blue solid;
+    // outline: 1px blue solid;
     width: 50%;
   }
 
   .hero-picture{
     display: block;
     position: absolute;
-    border: 1px black solid;
-    width: 40rem;
-    height: 40rem;
-    top: 50%;
+    width: 30rem;
+    height: 30rem;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+
+  }
+
+  #video-bg{
+    z-index: -1;
+    width: auto;
+    height: 98%;
+    overflow: hidden;
+    position: relative;
+    right: 30%;
+    opacity: 90%;
+    // max-width: 1700px;
   }
 
 }
 
 #coffee-section{
 
+  margin: 10px 20px;
   padding: 40px 0;
-  height: 50rem;
+  max-height: 50rem;
+
+  h2{
+    font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.8rem;
+  }
+
+  p{
+    padding: 20px 0;
+    font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4rem;
+  }
 
   .coffee-section-container{
     display: flex;
-    margin: 50px 0;
+    margin: 50px 0 70px 0;
   }
 
   .coffee-section-item{
@@ -85,7 +149,7 @@ header{
     width: 25rem;
     height: 25rem;
     margin: 0 20px;
-    outline: 1px blue solid;
+    border: 10px #f2efec solid;
   }
 
   #coffee-section-button{
@@ -101,32 +165,51 @@ header{
 
 #supplies-section{
 
-  padding: 40px 0;
-  height: 50rem;
-  outline: 1px red solid;
+  margin: 40px 20px;
+  max-height: 50rem;
+
+  h2{
+    font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4rem;
+    
+  }
+
+  p{
+    padding: 20px 0;
+    font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+
+  h2, p{
+    position: relative;
+    top: 15%;
+  }
+
 
   .supplies-section-container{
     display: flex;
-    // justify-content: flex-start;
     margin: 50px auto;
+    padding-top: 30px;
     
   }
 
   .supplies-section-picture{
     display: block;
     width: 50%;
-    outline: 1px blue solid;
+    // outline: 1px blue solid;
   }
 
   .supplies-section-text{
     display: block;
     text-align: right;
     width: 50%;
-    outline: 1px green solid;
+    // outline: 1px green solid;
   }
 
   #supplies-section-button{
-    display: inline;
+    position: relative;
+    top: 20%;
     padding: 10px;
     width: 200px;
   }
@@ -140,7 +223,6 @@ header{
   
     .recommendation-section-container{
       display: flex;
-      // justify-content: flex-start;
       margin: 50px auto;
       
     }
@@ -188,7 +270,21 @@ header{
 
 #footer{
   outline: 1px indigo solid;
-  height: 30rem;
+  height: 20rem;
+  padding: 20px 20px;
+  
+  #footer-container{
+    margin-top: 30px;
+  }
+
+  h4{
+    font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  }
+
+  ul{
+    list-style-type: none;
+  }
 }
 
 .search-bar{

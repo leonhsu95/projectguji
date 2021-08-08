@@ -1,7 +1,11 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-import SearchBar from "../SearchBar"; 
+// import Cart from "../Cart";
+// import { useQuery } from '@apollo/client';
+// import { QUERY_USER } from '../../utils/queries';
+// import { idbPromise } from '../../utils/helpers';
+// import SearchBar from "../SearchBar"; 
 
 function Nav() {
 
@@ -12,6 +16,11 @@ function Nav() {
           <li className="">
             <Link to="/shop">
               Shop
+            </Link>
+          </li>
+          <li className="">
+            <Link to="/addProduct">
+              Add Product
             </Link>
           </li>
           <li className="">
@@ -79,10 +88,11 @@ function Nav() {
               Login
             </Link>
           </li>
+          {/* <Cart /> */}
         </ul>   
 
 
-        <ul className="">
+        {/* <ul className="">
           <li className="">
             <Link to="/signup">
               Signup
@@ -93,7 +103,7 @@ function Nav() {
               Login
             </Link>
           </li>
-        </ul>
+        </ul> */}
         </>
       );
     }
@@ -115,5 +125,6 @@ function Nav() {
     </header>
   );
 }
+
 
 export default Nav;
