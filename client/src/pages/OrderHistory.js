@@ -12,9 +12,11 @@ function OrderHistory() {
     user = data.user;
   }
 
+  const detailContainer = "container my-1 detail";
+
   return (
     <>
-      <div className="container my-1">
+      <div className={detailContainer}>
         <Link to="/shop">← Back to Shop</Link>
 
         {user ? (

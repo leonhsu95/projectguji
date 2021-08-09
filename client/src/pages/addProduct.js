@@ -35,8 +35,10 @@ function AddProduct(props) {
     });
   };
 
+  const detailContainer = "container my-1 detail";
+
   return (
-    <div className="container my-1">
+    <div className={detailContainer}>
       <Link to="/shop">← Back to Shop</Link>
 
       <h2>Add Product</h2>

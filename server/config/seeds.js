@@ -74,7 +74,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'hario-cold-bew-pot.jpg',
+      image: 'hario-cold-brew-pot.png',
       price: 36.9,
       quantity: 20
     },

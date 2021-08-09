@@ -101,7 +101,6 @@ const detailContainer = "container my-1 detail";
               <div id="item-details">
                   <h2>{currentProduct.name}</h2>
                   <p>{currentProduct.description}</p>
-                  <p>
                     <div id="item-price">Price: ${parseInt(currentProduct.price).toFixed(2)}{' '}</div>
                     <button id="item-add" onClick={addToCart}>Add to Cart</button>
                     {/* <button
@@ -110,7 +109,6 @@ const detailContainer = "container my-1 detail";
                     >
                       Remove from Cart
                     </button> */}
-                  </p>
               </div>
           </div>
           
