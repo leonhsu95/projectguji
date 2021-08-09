@@ -6,7 +6,7 @@ const fcc = "footer-bar, wrapper";
 function footer(){
     return (
         <div id="footer">
-            <h4 className="wrapper">The Cold Drip</h4>
+            <h4 className="wrapper"><Link id="footer-name" to="/">The Cold Drip</Link></h4>
             <div id="footer-container" className="wrapper">
                 
                 <ul>

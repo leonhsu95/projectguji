@@ -53,7 +53,7 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
+    <div id="shop-category">
       <h2>Choose a Category:</h2>
       {/* <SearchBar/> */}
       <button

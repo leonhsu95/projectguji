@@ -57,14 +57,16 @@ function ProductList() {
   // If Category then search is gone.
   }
 
+  const shopItems= "flex-row shop-items";
+
   return (
-    <div className="my-2">
+    <div id="shop-page">
       <h2>Our Products:</h2>
       {/* If no search then display all, if search then display by name match */}
       {state.products.length ? (
         <div className="flex-row">
           {filterProducts().map((product) => (
-            <ProductItem
+            <ProductItem className="shop-items"
               key={product._id}
               _id={product._id}
               image={product.image}

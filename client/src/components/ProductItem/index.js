@@ -42,8 +42,10 @@ function ProductItem(item) {
     }
   }
 
+  const shopItemClass="card px-1 py-1 shop-items"
+
   return (
-    <div className="card px-1 py-1">
+    <div className={shopItemClass}>
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
@@ -55,7 +57,7 @@ function ProductItem(item) {
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
         <span>${price}</span>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+      <button className="shop-add-cart" onClick={addToCart}>Add to cart</button>
     </div>
   );
 }
