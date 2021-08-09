@@ -30,13 +30,14 @@ function Signup(props) {
     });
   };
 
-  const detailContainer = "container my-1 detail";
+  const detailContainer = "container my-1 detail form-register";
 
   return (
     <div className={detailContainer}>
       <Link to="/login">← Go to Login</Link>
 
-      <h2>Signup</h2>
+      <h2>Sign Up</h2>
+      <div className="form-container">
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
           <label htmlFor="firstName">First Name:</label>
@@ -79,9 +80,10 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
+          <button className="form-submit" type="submit">Submit</button>
         </div>
       </form>
+      </div>
     </div>
   );
 }

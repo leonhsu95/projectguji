@@ -29,13 +29,14 @@ function Login(props) {
     });
   };
 
-  const detailContainer = "container my-1 detail";
+  const detailContainer = "container my-1 detail form-register";
 
   return (
     <div className={detailContainer}>
       <Link to="/signup">← Go to Signup</Link>
 
       <h2>Login</h2>
+      <div className="form-container">
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
           <label htmlFor="email">Email address:</label>
@@ -62,10 +63,11 @@ function Login(props) {
             <p className="error-text">The provided credentials are incorrect</p>
           </div>
         ) : null}
-        <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
+        <div  className="flex-row flex-end">
+          <button className="form-submit" type="submit">Submit</button>
         </div>
       </form>
+    </div>
     </div>
   );
 }
