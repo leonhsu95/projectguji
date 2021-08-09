@@ -31,6 +31,7 @@ function Signup(props) {
   };
 
   const detailContainer = "container my-1 detail form-register";
+  const formFields = "flex-row space-between my-2 form-fields";
 
   return (
     <div className={detailContainer}>
@@ -39,7 +40,7 @@ function Signup(props) {
       <h2>Sign Up</h2>
       <div className="form-container">
       <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
+        <div className={formFields}>
           <label htmlFor="firstName">First Name:</label>
           <input
             placeholder="First"
@@ -49,7 +50,7 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className={formFields}>
           <label htmlFor="lastName">Last Name:</label>
           <input
             placeholder="Last"
@@ -59,7 +60,7 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className={formFields}>
           <label htmlFor="email">Email:</label>
           <input
             placeholder="youremail@test.com"
@@ -69,7 +70,7 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row space-between my-2">
+        <div className={formFields}>
           <label htmlFor="pwd">Password:</label>
           <input
             placeholder="******"

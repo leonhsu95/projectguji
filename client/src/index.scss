@@ -475,12 +475,16 @@ header{
     display: flex;
     justify-content: center;
   
-    label, input{
-      display: block;
+    .form-fields{
+      display: inline-block;
       position: relative;
-      right: 30%;
-      // outline: 1px red solid;
+      width: 100%;
       // text-align: center;
+    }
+
+    input{
+      margin-top: 10px;
+      width: 100%;
     }
   
   }
