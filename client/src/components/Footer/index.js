@@ -83,17 +83,17 @@ function footer(){
                 <ul>
                     <li className="">
                     <Link to="/shop">
-                        Terms and Conditions
+                        T/Cs
                     </Link>
                     </li>
                     <li className="">
                     <Link to="/about">
-                        Privacy Policy
+                        Privacy
                     </Link>
                     </li>
                     <li className="">
                     <Link to="/contact">
-                        Returns and Refunds
+                        Returns
                     </Link>
                     </li>
                 </ul>

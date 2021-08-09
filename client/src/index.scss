@@ -203,6 +203,60 @@ header{
     }
   }
 
+  #footer{
+    // outline: 1px indigo solid;
+    height: 20rem;
+    padding: 20px 0;
+    background-color: #f2efec;
+    
+    #footer-container{
+      margin: 20px auto;
+      display: flex;
+    }
+  
+    h4{
+      font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    ul{
+      list-style-type: none;
+      // outline: 1px red solid;
+      width: 22%;
+  
+      li{
+        padding: 3px 0;
+        font-size: 1rem;
+      }
+      
+      a{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+  
+      }
+  
+      a:visited{
+        text-decoration: none;
+        color: black;
+      }
+  
+      a:hover{
+        text-decoration: none;
+        color: black;
+        opacity: 0.8;
+        transition: all ease-in 1s;
+      }
+    }
+  
+    #copy{
+      display: flex;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+  }
+
 }
 
 
@@ -541,6 +595,4 @@ header{
     }
   }
   
-  
-
 }
