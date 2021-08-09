@@ -8,12 +8,6 @@ html{
   overflow-x:hidden;
 }
 
-.wrapper{
-  display: block;
-  margin:  0 auto;
-  max-width: 1400px;
-}
-
 header{
   // opacity: 0.2;
   // border: 1px red solid;
@@ -40,316 +34,174 @@ header{
   }
 }
 
-.buttons-index:link{
-  text-decoration: none;
-  color: black;
-  outline: 3px #ee6c4d solid;
-}
-
-.buttons-index:visited{
-  text-decoration: none;
-  color: black;
-  outline: 3px #ee6c4d solid;
-}
-
-.buttons-index:hover{
-  text-decoration: none;
-  color: white;
-  background-color: #ee6c4d;
-  outline: 3px #ee6c4d solid;
-  transition: all ease-in 0.5s;
-}
-
-#hero
-{
-  display: flex;
-  flex-direction: row;
-  // outline: 1px orange solid;
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 100%;
-  height: 70rem;
-  // max-width: 1700px;
-
-  .hero-left{
-    display: block;
-    // outline: 3px green solid;
-    width: 50%;
-    padding-left: 60px;
-    background-color: white;
-    
-    #heading{
-      font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      position: relative;
-      top: 20%;
-      font-size: 4.5rem;
-    }
-  
-    #subtitle{
-      font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      position: relative;
-      top: 20%;
-      font-size: 1.8rem;
-      max-width: 550px;
-      margin-top: 30px;
-      line-height: 1.8;
-    }
-  
-    .line{
-      position: relative;
-      top: 40%;
-      width: 4px;
-      height: 120px;
-      background-color: #ee6c4d;
-    }
-
-    .scroll-text{
-      display: inline-block;
-      position: relative;
-      padding-top: 20px;
-      padding-left: 30px;
-    }
-  }
-
-  .hero-right{
-    display: block;
-    // outline: 1px blue solid;
-    width: 50%;
-  }
-
-  .hero-picture{
-    display: block;
-    position: absolute;
-    width: 30rem;
-    height: 30rem;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  #video-bg{
-    z-index: -1;
-    width: auto;
-    height: 98%;
-    overflow: hidden;
-    position: relative;
-    right: 30%;
-    opacity: 90%;
-    // max-width: 1700px;
-  }
-
-}
-
-#coffee-section{
-
-  margin: 10px 20px;
-  padding: 40px 0;
-  max-height: 50rem;
-
-  h2{
-    font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.8rem;
-  }
-
-  p{
-    padding: 20px 0;
-    font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.4rem;
-  }
-
-  .coffee-section-container{
-    display: flex;
-    margin: 50px 0 70px 0;
-  }
-
-  .coffee-section-item{
-    display: block;
-    width: 25rem;
-    height: 25rem;
-    margin: 0 20px;
-    border: 10px #f2efec solid;
-  }
-
-  #coffee-section-button{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 10px 40px;
-    width: 200px;
-    text-align: center;
-  }
-
-}
-
-#supplies-section{
-
-  margin: 40px 20px;
-  max-height: 50rem;
-
-  h2{
-    font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 4rem;
-  }
-
-  p{
-    padding: 20px 0;
-    font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.4rem;
-    line-height: 1.8;
-  }
-
-  h2, p{
-    position: relative;
-    top: 15%;
-  }
-
-
-  .supplies-section-container{
-    display: flex;
-    margin: 50px auto;
-    padding-top: 30px;
-    
-  }
-
-  .supplies-section-picture{
-    display: block;
-    width: 50%;
-    // outline: 1px blue solid;
-  }
-
-  .supplies-section-text{
-    display: block;
-    text-align: right;
-    width: 50%;
-    // outline: 1px green solid;
-  }
-
-  #supplies-section-button{
-    position: relative;
-    top: 20%;
-    padding: 12px 40px;
-    width: 200px;
-  }
-}
-
-  #recommendation-section{
-
-    padding: 40px 0;
-    height: 50rem;
-    outline: 1px red solid;
-  
-    .recommendation-section-container{
-      display: flex;
-      margin: 50px auto;
-      
-    }
-  
-    .recommendation-section-text{
-      display: block;
-      width: 40%;
-      outline: 1px blue solid;
-    }
-
-    h2, #recommedendation-tag{
-      display: block;
-      z-index: -1;
-    }
-  
-    .recommendation-section-picture{
-      display: block;
-      text-align: right;
-      width: 75%;
-      outline: 1px green solid;
-      z-index: 1;
-    }
-  
-    #recommendation-section-button{
-      display: inline;
-      padding: 10px;
-      width: 200px;
-    }
-  
-}
-
-#banner{
-  outline: 1px purple solid;
-  height: 30rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  #banner-tag{
-    font-weight: bold;
-    padding: 10px 15px;
-    border: 1px green solid;
-  }
-}
-
-#footer{
-  // outline: 1px indigo solid;
-  height: 20rem;
-  padding: 30px 20px;
-  background-color: #f2efec;
-  
-  #footer-container{
-    margin: 20px auto;
-    display: flex;
-  }
-
-  h4{
-    font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.8em;
-  }
-
-  ul{
-    list-style-type: none;
-    // outline: 1px red solid;
-    width: 20%;
-
-    li{
-      padding: 3px 0;
-    }
-    
-    a{
-      text-decoration: none;
-      color: black;
-      cursor: pointer;
-
-    }
-
-    a:visited{
-      text-decoration: none;
-      color: black;
-    }
-
-    a:hover{
-      text-decoration: none;
-      color: black;
-      opacity: 0.8;
-      transition: all ease-in 1s;
-    }
-  }
-
-  #copy{
-    display: flex;
-    justify-content: center;
-  }
-}
-
-
-
-.search-bar{
-  display: flex;
-  justify-content: flex-end;
-}
-
 
 
 
 /*------------------------------MOBILE--------------------------------*/
 @media screen and (max-width: 1399px) {
 
+  .desktop{
+    display: none;
+  }
+  
+  .buttons-index:link{
+    text-decoration: none;
+    color: black;
+    outline: 3px #ee6c4d solid;
+  }
+  
+  .buttons-index:visited{
+    text-decoration: none;
+    color: black;
+    outline: 3px #ee6c4d solid;
+  }
+  
+  .buttons-index:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #ee6c4d;
+    outline: 3px #ee6c4d solid;
+    transition: all ease-in 0.5s;
+  }
 
+  #hero
+  {
+    display: flex;
+    flex-direction: row;
+    // outline: 1px orange solid;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 10;
+    // max-width: 1700px;
+  
+    #heading{
+      font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: relative;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .hero-picture{
+      display: block;
+      position: absolute;
+      width: 15rem;
+      height: 15rem;
+      z-index: 1;
+      top: 42%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .hero-right{
+      display: block;
+      // outline: 1px blue solid;
+      width: 100%;
+      height: auto;
+      z-index: -10;
+      overflow: hidden;
+    }
+  
+    #video-bg{
+      position: relative;
+      width: 225%;
+      left: -45%;
+      height: auto;
+      overflow: hidden;
+      // max-width: 1700px;
+    }
+  
+  }
+
+  #coffee-section{
+  
+    margin: 0 20px;
+    padding: 40px 0;
+  
+    h2{
+      font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    p{
+      padding: 20px 0;
+      font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .coffee-section-container{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 0 40px 0;
+    }
+  
+    .coffee-section-item{
+      display: block;
+      width: 45%;
+      height: auto;
+      margin: 10px auto;
+      border: 5px #f2efec solid;
+    }
+  
+    #coffee-section-button{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 10px 40px;
+      width: 200px;
+      text-align: center;
+    }
+  
+  }
+
+  #supplies-section{
+  
+    margin: 40px 20px;
+    max-height: 50rem;
+  
+    h2{
+      font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    p{
+      padding: 20px 0;
+      font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: center;
+    }
+  
+    .supplies-section-container{
+      display: flex;
+      margin: 0 auto;
+      
+    }
+  
+    .supplies-section-picture{
+      display: block;
+      margin: 0 auto 30px auto;
+      width: 60%;
+      // outline: 1px blue solid;
+    }
+  
+    .supplies-section-text{
+      display: block;
+      text-align: right;
+      width: 100%;
+      // outline: 1px green solid;
+    }
+  
+    #supplies-section-button{
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding: 12px 40px;
+      width: 200px;
+    }
+  }
 
 }
 
@@ -357,6 +209,9 @@ header{
 
 /*------------------------------DESKTOP--------------------------------*/
 @media screen and (min-width: 1400px) {
+  .responsive{
+    display: none;
+  }
 
   .wrapper{
     display: block;
