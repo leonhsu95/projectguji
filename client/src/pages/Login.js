@@ -34,7 +34,7 @@ function Login(props) {
 
   return (
     <div className={detailContainer}>
-      <Link to="/signup">← Go to Signup</Link>
+      <Link className="link-return" to="/signup">← Go to Signup</Link>
 
       <h2>Login</h2>
       <div className="form-container">
@@ -47,6 +47,7 @@ function Login(props) {
             type="email"
             id="email"
             onChange={handleChange}
+            required
           />
         </div>
         <div className={formFields}>
@@ -57,6 +58,7 @@ function Login(props) {
             type="password"
             id="pwd"
             onChange={handleChange}
+            required
           />
         </div>
         {error ? (

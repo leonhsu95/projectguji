@@ -34,19 +34,16 @@ function AddProduct(props) {
     });
   };
 
-  const detailContainer = "container my-1 detail";
-  const formFields = "flex-row space-between my-2 form-fields";
+  const detailContainer = "container my-1 detail product-form-container";
+  const formFields = "flex-row space-between my-2 product-form-fields";
 
   return (
     <div className={detailContainer}>
-      <Link to="/shop">← Back to Shop</Link>
+      <Link className="link-return" to="/shop">← Back to Shop</Link>
 
       <h2>Add Product</h2>
+      <div className="form-container">
       <form onSubmit={handleFormSubmit}>
-        {(!setProductState && !handleFormSubmit) ?
-          <p id="product-fail">Adding Product Failed</p>:
-          <p id="product-success">New Product Added!</p>
-        }
         <div className={formFields}>
           <label htmlFor="productName">Name:</label>
           <input
@@ -66,7 +63,7 @@ function AddProduct(props) {
           />
         </div>
         <div className={formFields}>
-          <label htmlFor="productImageName">Image:</label>
+          <label htmlFor="productImageName">Image Name:</label>
           <input
             name="image"
             id="productImageName"
@@ -98,19 +95,11 @@ function AddProduct(props) {
             {data && data.categories.map( category => <option key={category._id} value={category._id}>{category.name}</option>)}
           </select>
         </div>
-        {/* <div className="flex-row space-between my-2">
-          <label htmlFor="productCategory">Category:</label>
-          <input
-            name="productCategory"
-            type="productCategory"
-            id="productCategory"
-            onChange={handleChange}
-          />
-        </div> */}
         <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
+          <button className="form-submit" type="submit">Add Product</button>
         </div>
       </form>
+    </div>
     </div>
   );
 }

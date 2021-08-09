@@ -35,7 +35,7 @@ function Signup(props) {
 
   return (
     <div className={detailContainer}>
-      <Link to="/login">← Go to Login</Link>
+      <Link className="link-return" to="/login">← Go to Login</Link>
 
       <h2>Sign Up</h2>
       <div className="form-container">
@@ -48,6 +48,7 @@ function Signup(props) {
             type="firstName"
             id="firstName"
             onChange={handleChange}
+            required
           />
         </div>
         <div className={formFields}>
@@ -58,6 +59,7 @@ function Signup(props) {
             type="lastName"
             id="lastName"
             onChange={handleChange}
+            required
           />
         </div>
         <div className={formFields}>
@@ -68,6 +70,7 @@ function Signup(props) {
             type="email"
             id="email"
             onChange={handleChange}
+            required
           />
         </div>
         <div className={formFields}>
@@ -78,6 +81,7 @@ function Signup(props) {
             type="password"
             id="pwd"
             onChange={handleChange}
+            required
           />
         </div>
         <div className="flex-row flex-end">
