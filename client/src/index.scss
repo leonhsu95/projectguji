@@ -168,6 +168,26 @@ header{
       width: 200px;
       text-align: center;
     }
+
+    #coffee-section-button:link{
+      text-decoration: none;
+      color: black;
+      outline: 3px #ee6c4d solid;
+    }
+    
+    #coffee-section-button:visited{
+      text-decoration: none;
+      color: black;
+      outline: 3px #ee6c4d solid;
+    }
+    
+    #coffee-section-button:hover{
+      text-decoration: none;
+      color: white;
+      background-color: #ee6c4d;
+      outline: 3px #ee6c4d solid;
+      transition: all ease-in 0.3s;
+    }
   
   }
 
@@ -630,14 +650,26 @@ header{
       color: black;
     }
 
-    // #coffee-section-button{
-    //   text-decoration: none;
-    // color: white;
-    // background-color: #ee6c4d;
-    // outline: 3px #ee6c4d solid;
-    // transition: all ease-in 0.3s;
-    // }
-
+    #coffee-section-button:link{
+      text-decoration: none;
+      color: black;
+      outline: 3px #ee6c4d solid;
+    }
+    
+    #coffee-section-button:visited{
+      text-decoration: none;
+      color: black;
+      outline: 3px #ee6c4d solid;
+    }
+    
+    #coffee-section-button:hover{
+      text-decoration: none;
+      color: white;
+      background-color: #ee6c4d;
+      outline: 3px #ee6c4d solid;
+      transition: all ease-in 0.3s;
+    }
+  
 
   
     #coffee-section-button{

@@ -29,8 +29,10 @@ function Login(props) {
     });
   };
 
+  const detailContainer = "container my-1 detail";
+
   return (
-    <div className="container my-1">
+    <div className={detailContainer}>
       <Link to="/signup">← Go to Signup</Link>
 
       <h2>Login</h2>
