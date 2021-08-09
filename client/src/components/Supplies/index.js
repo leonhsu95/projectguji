@@ -16,7 +16,9 @@ function Supplies(){
                 
                 <h2 className="wrapper">Our Supplies</h2>
                 <p className="wrapper">We have a selection of World Class brands <br></br>that will help you make the best cup of coffee <br></br> of all style and types</p>
-                <Link to="/shop"><button id="supplies-section-button">View Selection</button></Link>
+                <Link id="supplies-section-button" className="buttons-index" to="/shop">
+                    View Selection
+                </Link>
             </div>
         </div>
             

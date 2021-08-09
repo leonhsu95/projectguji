@@ -23,8 +23,8 @@ function Coffees(){
                     <p>Coffee</p>
                 </section>
             </div>
-            <Link to="/shop">
-                <button id="coffee-section-button">View Selection</button>
+            <Link id="coffee-section-button" className="buttons-index" to="/shop">
+                View Selection
             </Link>
         </div> 
     )
