@@ -54,7 +54,7 @@ function CategoryMenu() {
 
   return (
     <div id="shop-category">
-      <h2>Choose a Category:</h2>
+      <h2 id="shop-category-heading">Choose a Category:</h2>
       {/* <SearchBar/> */}
       <button
           onClick={() => {

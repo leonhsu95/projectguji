@@ -84,31 +84,36 @@ function Detail() {
     idbPromise('cart', 'delete', { ...currentProduct });
   };
 
+const detailContainer = "container my-1 detail";
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
+        <div className={detailContainer}>
           <Link to="/shop">← Back to Products</Link>
+          <div id="item-container"> 
+              <div id="item-image">
+                  <img
+                    src={`/images/${currentProduct.image}`}
+                    alt={currentProduct.name}
+                  />
+              </div>
 
-          <h2>{currentProduct.name}</h2>
-
-          <p>{currentProduct.description}</p>
-
-          <p>
-            <strong>Price:</strong>${parseInt(currentProduct.price).toFixed(2)}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
-            <button
-              disabled={!cart.find((p) => p._id === currentProduct._id)}
-              onClick={removeFromCart}
-            >
-              Remove from Cart
-            </button>
-          </p>
-
-          <img
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-          />
+              <div id="item-details">
+                  <h2>{currentProduct.name}</h2>
+                  <p>{currentProduct.description}</p>
+                  <p>
+                    <div id="item-price">Price: ${parseInt(currentProduct.price).toFixed(2)}{' '}</div>
+                    <button id="item-add" onClick={addToCart}>Add to Cart</button>
+                    {/* <button
+                      disabled={!cart.find((p) => p._id === currentProduct._id)}
+                      onClick={removeFromCart}
+                    >
+                      Remove from Cart
+                    </button> */}
+                  </p>
+              </div>
+          </div>
+          
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}

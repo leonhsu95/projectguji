@@ -50,7 +50,7 @@ function App() {
         <div>
           <Provider store={store}>
             {/* <Nav /> */}
-            {/* <Navbar /> */}
+            <Navbar />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/shop" component={Shop} />
