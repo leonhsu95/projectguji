@@ -17,6 +17,7 @@ import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Nav from './components/Nav';
+import Navbar from './components/NavBar';
 import Footer from './components/Footer';
 //import { StoreProvider } from './utils/GlobalState';
 import AddProduct from './pages/addProduct';
@@ -48,7 +49,8 @@ function App() {
       <Router>
         <div>
           <Provider store={store}>
-            <Nav />
+            {/* <Nav /> */}
+            <Navbar />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/shop" component={Shop} />
