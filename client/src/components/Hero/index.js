@@ -6,12 +6,12 @@ function Hero(){
     return (
     <>
         <div className="desktop">
-            <div id="hero">
+            <div className="hero">
                 <div className="hero-left">
-                    <h1 id="heading">
+                    <h1 className="heading">
                         Essence of Coffee
                     </h1>
-                    <p id="subtitle">
+                    <p className="subtitle">
                         The celebration of deliciousness. <br></br>
                         The best of coffee industry brought together in one space.
                     </p>
@@ -24,7 +24,7 @@ function Hero(){
                     <img src={HomePic} alt="The Cold Drip"></img>
                 </div>
                 <div className="hero-right">
-                    <video id="video-bg" autoPlay loop muted>
+                    <video className="video-bg" autoPlay loop muted>
                         <source src={Coffee} type="video/mp4">
                         </source>
                     </video>
@@ -33,16 +33,16 @@ function Hero(){
             </div>    
         </div>
         <div className="responsive">
-            <div id="hero" className="responsive">
+            <div className="hero">
                 <div className="hero-picture">
-                    <h1 id="heading">
+                    <h1 className="heading">
                         Essence of Coffee
                     </h1>
                     <img src={HomePic} alt="The Cold Drip"></img>
                 </div>
 
                 <div className="hero-right">
-                    <video id="video-bg" autoPlay loop muted>
+                    <video className="video-bg" autoPlay loop muted>
                         <source src={Coffee} type="video/mp4">
                         </source>
                     </video>

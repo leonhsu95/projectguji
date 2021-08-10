@@ -15,7 +15,7 @@ display: none;
     flex-flow: column nowrap;
     cursor: pointer;
     z-index: 10;
-    text-transform: uppercase;
+    
 
     .burger-line{
       width: 2rem;
