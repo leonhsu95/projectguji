@@ -27,16 +27,18 @@ function footer(){
                         Contact
                     </Link>
                     </li>
-                    <li className="">
-                    <Link to="/signup">
-                        Signup
-                    </Link>
+                    <li>
+                        <Link to="/orderHistory">
+                            Order History
+                        </Link>
+                        </li>
+                        <li>
+                        {/* this is not using the Link component to logout or user and then refresh the application to the start */}
+                        <a href="/" onClick={() => Auth.logout()}>
+                            Logout
+                        </a>
                     </li>
-                    <li className="">
-                    <Link to="/login">
-                        Login
-                    </Link>
-                    </li>
+                    
                 </ul>
                 <ul>
                     <li className="">
@@ -130,17 +132,16 @@ function footer(){
                             Contact
                         </Link>
                         </li>
-                        <li>
-                        <Link to="/orderHistory">
-                            Order History
-                        </Link>
-                        </li>
-                        <li>
-                        {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-                        <a href="/" onClick={() => Auth.logout()}>
-                            Logout
-                        </a>
-                        </li>
+                        <li className="">
+                    <Link to="/signup">
+                        Signup
+                    </Link>
+                    </li>
+                    <li className="">
+                    <Link to="/login">
+                        Login
+                    </Link>
+                    </li>
                     </ul>
                     <ul>
                         <li className="">

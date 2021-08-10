@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
+// import Cart from '../Cart';
 import Burger from './Burger';
-
-// import Auth from "../../utils/auth";
+import ShoppingCart from './ShoppingCart';
 
 const Nav = styled.nav`
     width: 100%;
@@ -16,17 +16,26 @@ const Nav = styled.nav`
     #logo{
         padding: 15px 0;
     }
+
+    @media screen and (max-width: 1200px){
+        flex-direction: row-reverse;
+    }
 `;
 
 function ResponsiveNav() {
     return (
-        <Nav>
+        <Nav id="responsive-nav">
+            
+            < ShoppingCart />
             <div id="logo">
             <Link to="/">
-                Logo
+                <div id="logo-img">The Cold Drip</div>
             </Link>
             </div>
             < Burger />
+            {/* < Cart /> */}
+            
+            
             
         </Nav>
     )

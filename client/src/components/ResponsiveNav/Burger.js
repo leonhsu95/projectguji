@@ -8,9 +8,8 @@ display: none;
 @media screen and (max-width: 1200px){    
     width: 2rem;
     height: 2rem;
-    position: fixed;
+    position: relative;
     top: 15px;
-    right: 20px;
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
@@ -30,7 +29,7 @@ display: none;
       }
 
       &:nth-child(2){
-        transform: ${({open}) => open ? 'translateX(100%)' : 'translateX(0%)'};
+        transform: ${({open}) => open ? 'translateX(-100%)' : 'translateX(0%)'};
         opacity: ${({open}) => open ? 0 : 1};
       }
 

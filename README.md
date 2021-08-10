@@ -33,6 +33,7 @@ Technologies used in this portfolio include:
         * concurrently (run npm i concurrently before npm run install)
     * Client
         * react (npx-create-react-app)
+        * styled-components
     * Server 
     * apollo-server-express version "^2.11.0"
         * The app won't work with the latest version due to how it handles middleware functions differently. Install version 2.x...

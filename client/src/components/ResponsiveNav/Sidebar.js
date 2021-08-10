@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Auth from "../../utils/auth";
 import styled from 'styled-components';
 
 const MobileMenu = styled.ul`
@@ -18,9 +19,9 @@ const MobileMenu = styled.ul`
         flex-flow: column nowrap;
         background-color: gray;
         position: fixed;
-        top: -2%;
+        top: -5%;
         right: 0%;
-        height: 101vh;
+        height: 105vh;
         width: 50%;
         padding-top: 3.5rem;
         z-index: 3;
@@ -34,8 +35,9 @@ const MobileMenu = styled.ul`
 `;
 
 const Sidebar = ({open}) => {
-    return (
-            <MobileMenu id="mobile-menu" open={open}>
+    if (Auth.loggedIn()) {
+        return(
+        <MobileMenu id="mobile-menu" open={open}>
             <li className="">
                 <Link to="/shop">
                 Shop
@@ -44,6 +46,36 @@ const Sidebar = ({open}) => {
             <li>
                 <Link to="/addProduct">
                 Add Product
+                </Link>
+            </li>
+            <li className="">
+                <Link to="/about">
+                About
+                </Link>
+            </li>
+            <li className="">
+                <Link to="/contact">
+                Contact
+                </Link>
+            </li>
+            <li>
+                <Link to="/orderHistory">
+                    Order History
+                </Link>
+                </li>
+                <li>
+                {/* this is not using the Link component to logout or user and then refresh the application to the start */}
+                <a href="/" onClick={() => Auth.logout()}>
+                    Logout
+                </a>
+            </li>
+        </MobileMenu>
+        )}else{
+    return (
+            <MobileMenu id="mobile-menu" open={open}>
+            <li className="">
+                <Link to="/shop">
+                Shop
                 </Link>
             </li>
             <li className="">
@@ -67,7 +99,7 @@ const Sidebar = ({open}) => {
                 </Link>
             </li>
         </MobileMenu>
-    )
+    )}
 }
 
 export default Sidebar;

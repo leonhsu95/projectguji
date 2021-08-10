@@ -5,11 +5,12 @@
   min-width: 20%;
   max-width: 30%;
   max-height: 60%;
-  background-color: var(--light);
+  background-color: white;
   overflow: auto;
   padding: .5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
   border-bottom-left-radius: .5rem;
+  z-index: 5;
 }
 
 .cart h2 {
@@ -25,6 +26,11 @@
   right: .5rem;
   cursor: pointer;
   color: var(--tertiary);
+  z-index: 100;
+}
+
+.close{
+  font-size: 1.5rem;
 }
 
 .cart .close:hover {
@@ -33,19 +39,21 @@
 
 .cart-closed {
   position: fixed;
-  top: 2%;
-  right: 1%;
+  bottom: 2%;
+  right: 2%;
   font-size: 2rem;
   cursor: pointer;
-  background-color: var(--secondary);
+  background-color: #f2efec;
   border-radius: 50%;
   padding: .25rem;
   width: 50px;
   height: 50px;
+  z-index: 3;
+  padding-top: 10px;
 }
 
 .cart-closed:hover {
-  transform: rotate(8deg);
+  transform: rotate(5deg);
 }
 
 .cart img {
@@ -59,17 +67,63 @@
   margin: 0 .5rem 1rem 0;
 }
 
-@media screen and (max-width: 768px) {
+#checkout{
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  background-color: #f2efec;
+  border: 1px #f2efec solid;
+  border-radius: 20px ;
+  cursor: pointer;
+}
+
+#checkout:hover{
+  background-color: #1bcf94;
+  color: white;
+  border: 1px #1bcf94 solid;
+  transition: all ease-in 0.2s;
+}
+
+@media screen and (max-width: 1200px) {
   .cart {
-    position: relative;
-    max-width: 100%;
-    max-height: auto;
-    box-shadow: none;
+    position: fixed;
+    max-width: 50%;
+    height: 100%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
     background-color: inherit;
+    background-color: white;
+    z-index: 5;
   }
 
   .cart-closed {
-    position: relative;
+    bottom: 2%;
+    right: 2%;
+    position: fixed;
     margin: 0 auto;
   }
+
+  .close{
+    z-index: 10;
+  }
+
+  .cart-closed:hover {
+    transform: rotate(5deg);
+  }
+
+  #checkout{
+    margin-top: 40px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    background-color: #f2efec;
+    border: 1px #f2efec solid;
+    border-radius: 20px ;
+    cursor: pointer;
+  }
+  
+  #checkout:hover{
+    background-color: #1bcf94;
+    color: white;
+    border: 1px #1bcf94 solid;
+    transition: all ease-in 0.2s;
+  }
+
 }

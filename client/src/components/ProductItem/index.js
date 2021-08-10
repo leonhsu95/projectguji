@@ -5,6 +5,7 @@ import { pluralize } from "../../utils/helpers"
 // import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import { AnimationWrapper } from "react-hover-animation";
 
 function ProductItem(item) {
   // const [state, dispatch] = useStoreContext();
@@ -46,6 +47,7 @@ function ProductItem(item) {
 
   return (
     <div className={shopItemClass}>
+      <AnimationWrapper>
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
@@ -57,7 +59,9 @@ function ProductItem(item) {
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
         <span>${price}</span>
       </div>
+      </AnimationWrapper>
       <button className="shop-add-cart" onClick={addToCart}>Add to cart</button>
+      
     </div>
   );
 }

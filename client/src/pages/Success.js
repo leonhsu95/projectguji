@@ -30,9 +30,9 @@ function Success() {
   }, [addOrder]);
 
   return (
-    <div>
+    <div id="success-page">
       <Jumbotron>
-        <h1>Success!</h1>
+        <h1 id="success-purchase">Success!</h1>
         <h2>Thank you for your purchase!</h2>
         <h2>You will now be redirected to the home page</h2>
       </Jumbotron>

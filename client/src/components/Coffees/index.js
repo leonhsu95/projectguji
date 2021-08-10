@@ -6,13 +6,13 @@ import { useQuery } from '@apollo/client';
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import { Link } from 'react-router-dom';
-import { AnimationWrapper } from 'react-hover-animation';
-import Artisan from '../Photos/artisan-blend.png'
-import Biz from '../Photos/biz-blend.png'
-import Impressa from '../Photos/impressa-blend.png';
-import Lavazza from '../Photos/lavazza-blend.png';
-import Maverick from '../Photos/maverick-blend.png';
-import Tag from '../Photos/tag-blend.png';
+// import { AnimationWrapper } from 'react-hover-animation';
+// import Artisan from '../Photos/artisan-blend.png'
+// import Biz from '../Photos/biz-blend.png'
+// import Impressa from '../Photos/impressa-blend.png';
+// import Lavazza from '../Photos/lavazza-blend.png';
+// import Maverick from '../Photos/maverick-blend.png';
+// import Tag from '../Photos/tag-blend.png';
 import HomeProduct from '../HomeProduct';
 import spinner from '../../assets/spinner.gif';
 

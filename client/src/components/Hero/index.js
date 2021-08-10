@@ -9,11 +9,11 @@ function Hero(){
             <div id="hero">
                 <div className="hero-left">
                     <h1 id="heading">
-                        The Cold Drip
+                        Essence of Coffee
                     </h1>
                     <p id="subtitle">
                         The celebration of deliciousness. <br></br>
-                        The best of coffee culture brought together in one space.
+                        The best of coffee industry brought together in one space.
                     </p>
                     <div className="line">
                         <p className="scroll-text">Scroll Down to Discover</p>
@@ -34,19 +34,9 @@ function Hero(){
         </div>
         <div className="responsive">
             <div id="hero" className="responsive">
-                {/* <div className="hero-left">
-                    <h1 id="heading">
-                        The Cold Drip
-                    </h1>
-                    <p id="subtitle">
-                        The celebration of deliciousness. <br></br>
-                        The best of coffee culture brought together in one space.
-                    </p>
-                </div> */}
-
                 <div className="hero-picture">
                     <h1 id="heading">
-                        The Cold Drip
+                        Essence of Coffee
                     </h1>
                     <img src={HomePic} alt="The Cold Drip"></img>
                 </div>

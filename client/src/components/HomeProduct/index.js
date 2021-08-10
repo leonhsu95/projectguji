@@ -14,7 +14,7 @@ function HomeProduct(item) {
   
     return (
         <section className="coffee-section-item">
-        <AnimationWrapper>
+        <AnimationWrapper className="animation-hover">
         <Link className="product-link-index" to={`/products/${_id}`}>
           <img
             alt={name}

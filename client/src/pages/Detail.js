@@ -89,7 +89,7 @@ const detailContainer = "container my-1 detail";
     <>
       {currentProduct && cart ? (
         <div className={detailContainer}>
-          <Link to="/shop">← Back to Products</Link>
+          <Link className="link-return" to="/shop">← Back to Products</Link>
           <div id="item-container"> 
               <div id="item-image">
                   <img
@@ -115,7 +115,7 @@ const detailContainer = "container my-1 detail";
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
-      <Cart />
+      {/* <Cart /> */}
     </>
   );
 }
