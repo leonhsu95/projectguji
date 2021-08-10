@@ -17,7 +17,8 @@ const MobileMenu = styled.ul`
     @media screen and (max-width: 1200px){
         transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
         flex-flow: column nowrap;
-        background-color: gray;
+        background-color: #f2efec;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
         position: fixed;
         top: -5%;
         right: 0%;

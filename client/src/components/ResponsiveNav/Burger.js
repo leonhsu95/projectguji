@@ -15,11 +15,12 @@ display: none;
     flex-flow: column nowrap;
     cursor: pointer;
     z-index: 10;
+    text-transform: uppercase;
 
     .burger-line{
       width: 2rem;
       height: 0.25rem;
-      background-color: ${({open}) => open ? '#ccc' : '#333'};
+      background-color: ${({open}) => open ? '#333' : '#333'};
       border-radius: 10px;
       transform-origin: 1px;
       transition all ease-in 0.3s;
