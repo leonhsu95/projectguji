@@ -42,61 +42,61 @@ function footer(){
                 </ul>
                 <ul>
                     <li className="">
-                    <Link to="/shop">
+                    <Link to="/shippping">
                         Shipping
                     </Link>
                     </li>
                     <li className="">
-                    <Link to="/about">
+                    <Link to="/return">
                         Return
                     </Link>
                     </li>
                     <li className="">
-                    <Link to="/contact">
+                    <Link to="/payments">
                         Payments
                     </Link>
                     </li>
                     <li className="">
-                    <Link to="/signup">
+                    <Link to="/contract">
                         Contact
                     </Link>
                     </li>
                 </ul>
                 <ul>
                     <li className="">
-                    <Link to="/shop">
+                    <Link to="/blends">
                         Blends
                     </Link>
                     </li>
                     <li className="">
-                    <Link to="/about">
+                    <Link to="/quality">
                         Quality
                     </Link>
                     </li>
                     <li className="">
-                    <Link to="/contact">
+                    <Link to="/supplies">
                         Supplies
                     </Link>
                     </li>
                     <li className="">
-                    <Link to="/signup">
+                    <Link to="/beans">
                         Beans
                     </Link>
                     </li>
                 </ul>
                 <ul>
                     <li className="">
-                    <Link to="/shop">
+                    <Link to="/tcs">
                         T/Cs
                     </Link>
                     </li>
                     <li className="">
-                    <Link to="/about">
+                    <Link to="/privacy">
                         Privacy
                     </Link>
                     </li>
                     <li className="">
-                    <Link to="/contact">
+                    <Link to="/returns">
                         Returns
                     </Link>
                     </li>
@@ -145,61 +145,61 @@ function footer(){
                     </ul>
                     <ul>
                         <li className="">
-                        <Link to="/shop">
+                        <Link to="/shipping">
                             Shipping
                         </Link>
                         </li>
                         <li className="">
-                        <Link to="/about">
+                        <Link to="/return">
                             Return
                         </Link>
                         </li>
                         <li className="">
-                        <Link to="/contact">
+                        <Link to="/payments">
                             Payments
                         </Link>
                         </li>
                         <li className="">
-                        <Link to="/signup">
+                        <Link to="/contact">
                             Contact
                         </Link>
                         </li>
                     </ul>
                     <ul>
                         <li className="">
-                        <Link to="/shop">
+                        <Link to="/blends">
                             Blends
                         </Link>
                         </li>
                         <li className="">
-                        <Link to="/about">
+                        <Link to="/quality">
                             Quality
                         </Link>
                         </li>
                         <li className="">
-                        <Link to="/contact">
+                        <Link to="/supplies">
                             Supplies
                         </Link>
                         </li>
                         <li className="">
-                        <Link to="/signup">
+                        <Link to="/beans">
                             Beans
                         </Link>
                         </li>
                     </ul>
                     <ul>
                         <li className="">
-                        <Link to="/shop">
+                        <Link to="/tcs">
                             T/Cs
                         </Link>
                         </li>
                         <li className="">
-                        <Link to="/about">
+                        <Link to="/privacy">
                             Privacy
                         </Link>
                         </li>
                         <li className="">
-                        <Link to="/contact">
+                        <Link to="/returns">
                             Returns
                         </Link>
                         </li>
