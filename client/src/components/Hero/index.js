@@ -1,5 +1,5 @@
 import React from 'react';
-import Coffee from "../Media/frenchpress.mp4";
+import Coffee from "../Media/coffee.mp4";
 import HomePic from "../Photos/the-cold-drip1.png"
 
 function Hero(){
