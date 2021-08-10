@@ -15,7 +15,7 @@ function Hero(){
                     </h1>
                     <p className="subtitle">
                         The celebration of deliciousness. <br></br>
-                        The best of coffee industry brought together in one space.
+                        The best of coffee industry brought <br></br>together in one space.
                     </p>
                     <div className="line">
                         <p className="scroll-text">Scroll Down to Discover</p>
@@ -27,7 +27,11 @@ function Hero(){
                 </div>
                 <div className="hero-right">
                     <div className="video-bg">
-                        <img id="background" src={Coffee} alt="background"></img>
+                        {/* <img id="background" src={Coffee} alt="background"></img> */}
+                        <video autoPlay loop muted>
+                            <source src={Video} type="video/mp4">
+                            </source>
+                        </video>
                     </div>
                 </div>
 

@@ -177,6 +177,11 @@ header{
       overflow: hidden;
       // max-width: 1700px;
     }
+
+    .coffee{
+      width: 120px;
+      height: auto;
+    }
   
   }
 
@@ -725,7 +730,6 @@ header{
     flex-direction: row;
     // outline: 1px orange solid;
     margin: 0 auto;
-    padding: 0 10px;
     width: 100%;
     height: 70rem;
     // max-width: 1700px;
@@ -741,15 +745,15 @@ header{
         font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         position: relative;
         top: 20%;
-        font-size: 4.5rem;
+        font-size: 3rem;
       }
     
       .subtitle{
         font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         position: relative;
         top: 20%;
-        font-size: 1.8rem;
-        max-width: 550px;
+        font-size: 1.2rem;
+        max-width: 400px;
         margin-top: 30px;
         line-height: 1.8;
       }
@@ -779,8 +783,8 @@ header{
     .hero-picture{
       display: block;
       position: absolute;
-      width: 30rem;
-      height: 30rem;
+      width: 20%;
+      height: 20%;
       top: 45%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -788,17 +792,21 @@ header{
   
     .video-bg{
       z-index: -1;
-      width: 2000px;
+      width: 100%;
+      height: auto;
       overflow: hidden;
       position: relative;
-      right: 30%;
       opacity: 90%;
       // max-width: 1700px;
-    
-      #background{
-        width: 1900px;
-      }
+
+        video{
+          width: 200%;
+          overflow: hidden;
+        }
+
     }
+
+
   
   }
   
