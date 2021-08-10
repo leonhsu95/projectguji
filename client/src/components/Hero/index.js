@@ -32,7 +32,7 @@ function Hero(){
 
             </div>    
         </div>
-        <div className="responsive">
+        {/* <div className="responsive">
             <div className="hero">
                 <div className="hero-picture">
                     <h1 className="heading">
@@ -49,7 +49,7 @@ function Hero(){
                 </div>
 
             </div>      
-        </div>
+        </div> */}
     </>
     )
 }
