@@ -10,7 +10,7 @@ const MobileMenu = styled.ul`
     flex-flow: row nowrap;
 
     li{
-        padding: 10px;
+        padding: 10px 0;
         text-decoration: none;
     }
 
