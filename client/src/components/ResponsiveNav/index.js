@@ -12,6 +12,7 @@ const Nav = styled.nav`
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 
     #logo{
         padding: 15px 0;
