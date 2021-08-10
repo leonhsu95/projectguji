@@ -81,6 +81,14 @@ header{
         }
       }
 
+      #logo-png{
+        display: block;
+        position: relative;
+        bottom: 5px;
+        width: 150px;
+        height: auto;
+      }
+
   }
 
   .buttons-index:link{
@@ -107,7 +115,6 @@ header{
     display: block;
     position: relative;
     margin: 0 auto;
-    outline: red 1px solid;
     right: 15px;
   }
 
@@ -628,8 +635,13 @@ header{
     display: none;
   }
 
+  #logo-png{
+    height: 70px;
+  }
+
   #responsive-nav{
     padding: 0 40px 0 70px;
+    height: 90px;
 
     a:link{
       text-decoration: none;
@@ -923,7 +935,7 @@ header{
   
       padding: 40px 0;
       height: 50rem;
-      outline: 1px red solid;
+      // outline: 1px red solid;
     
       .recommendation-section-container{
         display: flex;
