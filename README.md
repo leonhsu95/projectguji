@@ -71,14 +71,14 @@ UNDER NO CIRCUMSTANCES CAN THIS WORK BE COPIED, REPRODUCED OR REUSED.
 
 
 ## Features
+
 - As a React Website, load times to fetch data are quick for UX
-
 - Users can view products and items, adding to cart and buy with payment processed by Stripe
-
 - New Products can be added as a new purchase item for customers to buy
 
 
 ## Improvements
+
 - Make “Add Products” a feature that user admins can only use
 - Image uploading to go along with “Add Products” feature
 - Search function to find specific products
@@ -87,6 +87,7 @@ UNDER NO CIRCUMSTANCES CAN THIS WORK BE COPIED, REPRODUCED OR REUSED.
 - Profile page that users can customize and repeat orders
 - Prevent users to add to cart when not logged in
 - Make a printable receipt based on order history and shipping info
+- Update content pages
 
 
 ## Tests
