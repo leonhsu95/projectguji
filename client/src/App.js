@@ -18,6 +18,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Nav from './components/Nav';
 import Navbar from './components/NavBar';
+import ResponsiveNav from './components/ResponsiveNav';
 import Footer from './components/Footer';
 //import { StoreProvider } from './utils/GlobalState';
 import AddProduct from './pages/addProduct';
@@ -50,7 +51,8 @@ function App() {
         <div>
           <Provider store={store}>
             {/* <Nav /> */}
-            <Navbar />
+            {/* <Navbar /> */}
+            <ResponsiveNav />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/shop" component={Shop} />

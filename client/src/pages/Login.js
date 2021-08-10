@@ -42,7 +42,6 @@ function Login(props) {
         <div className={formFields}>
           <label htmlFor="email">Email address:</label>
           <input
-            placeholder="youremail@test.com"
             name="email"
             type="email"
             id="email"
@@ -53,7 +52,6 @@ function Login(props) {
         <div className={formFields}>
           <label htmlFor="pwd">Password:</label>
           <input
-            placeholder="******"
             name="password"
             type="password"
             id="pwd"

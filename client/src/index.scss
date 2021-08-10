@@ -44,11 +44,11 @@ header{
 
 /*------------------------------MOBILE--------------------------------*/
 @media screen and (max-width: 1200px) {
-
+  
   .desktop{
     display: none;
   }
-  
+
   .buttons-index:link{
     text-decoration: none;
     color: black;
@@ -91,12 +91,24 @@ header{
     .hero-picture{
       display: block;
       position: absolute;
-      width: 12rem;
-      height: auto;
       z-index: 1;
-      top: 42%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      margin: 0 auto;
+      z-index: -9;
+      
+      h1{
+        position: relative;
+        top: 30px;
+      }
+
+      img{
+        position: relative;
+        width: 60%;
+        margin: 0 auto;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+      }
+    
     }
   
     .hero-right{
@@ -194,7 +206,6 @@ header{
   #supplies-section{
   
     margin: 40px 20px;
-    max-height: 50rem;
   
     h2{
       font-family: "Playfair Display", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -241,7 +252,7 @@ header{
 
   #footer{
     // outline: 1px indigo solid;
-    height: 20rem;
+    height: auto;
     padding: 20px 0;
     background-color: #f2efec;
     

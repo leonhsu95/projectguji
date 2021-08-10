@@ -12,7 +12,7 @@ function AddProduct(props) {
 
   const handleFormSubmit = async (event) => {
     console.log(productState);
-    event.preventDefault();
+    // event.preventDefault();
 
     await addProduct({
       variables: {
