@@ -1,5 +1,7 @@
 import React from 'react';
-import Coffee from "../Media/coffee.mp4";
+import Coffee from "../Media/frenchpress.gif";
+import Video from "../Media/coffee.mp4";
+// import Background from "../Media/background.png";
 import HomePic from "../Photos/the-cold-drip1.png"
 
 function Hero(){
@@ -24,15 +26,14 @@ function Hero(){
                     <img src={HomePic} alt="The Cold Drip"></img>
                 </div>
                 <div className="hero-right">
-                    <video className="video-bg" autoPlay loop muted>
-                        <source src={Coffee} type="video/mp4">
-                        </source>
-                    </video>
+                    <div className="video-bg">
+                        <img id="background" src={Coffee} alt="background"></img>
+                    </div>
                 </div>
 
             </div>    
         </div>
-        {/* <div className="responsive">
+        <div className="responsive">
             <div className="hero">
                 <div className="hero-picture">
                     <h1 className="heading">
@@ -43,13 +44,13 @@ function Hero(){
 
                 <div className="hero-right">
                     <video className="video-bg" autoPlay loop muted>
-                        <source src={Coffee} type="video/mp4">
+                        <source src={Video} type="video/mp4">
                         </source>
                     </video>
                 </div>
 
             </div>      
-        </div> */}
+        </div>
     </>
     )
 }

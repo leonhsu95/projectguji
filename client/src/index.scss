@@ -788,13 +788,16 @@ header{
   
     .video-bg{
       z-index: -1;
-      width: auto;
-      height: 98%;
+      width: 2000px;
       overflow: hidden;
       position: relative;
       right: 30%;
       opacity: 90%;
       // max-width: 1700px;
+    
+      #background{
+        width: 1900px;
+      }
     }
   
   }
