@@ -16,14 +16,13 @@ import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-// import Nav from './components/Nav';
-// import Navbar from './components/NavBar';
 import ResponsiveNav from './components/ResponsiveNav';
 import Footer from './components/Footer';
 //import { StoreProvider } from './utils/GlobalState';
 import AddProduct from './pages/addProduct';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
+import TemplatePage from './pages/TemplatePage';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -55,6 +54,7 @@ function App() {
             <ResponsiveNav />
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/template" component={TemplatePage} />
               <Route exact path="/shop" component={Shop} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />

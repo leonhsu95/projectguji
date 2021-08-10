@@ -50,12 +50,12 @@ const Sidebar = ({open}) => {
                 </Link>
             </li>
             <li className="">
-                <Link to="/about">
+                <Link to="/template">
                 About
                 </Link>
             </li>
             <li className="">
-                <Link to="/contact">
+                <Link to="/template">
                 Contact
                 </Link>
             </li>

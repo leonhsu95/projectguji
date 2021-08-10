@@ -47,10 +47,28 @@ header{
   color: black;
 }
 
+.template{
+  margin: 0 auto;  
+  max-width: 1200px;
+  height: 610px;
+}
+
 
 /*------------------------------MOBILE--------------------------------*/
 @media screen and (max-width: 1200px) {
+  .template{
+    margin: 0 auto;  
+    max-width: 1200px;
+    height: 610px;
+    padding: 0 20px;
+
+    p{
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+  }
   
+
   .desktop{
     display: none;
   }

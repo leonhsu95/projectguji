@@ -37,7 +37,7 @@ function OrderHistory() {
                     
                     <div key={index} className={itemsClass}>
                       <AnimationWrapper className="animation-hover">
-                      <Link class="shop-items" to={`/products/${_id}`}>
+                      <Link className="shop-items" to={`/products/${_id}`}>
                         <img alt={name} src={`/images/${image}`} />
                         <p>{name}</p>
                       </Link>
