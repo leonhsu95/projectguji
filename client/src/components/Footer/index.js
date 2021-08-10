@@ -190,7 +190,7 @@ function footer(){
                     <ul>
                         <li className="">
                         <Link to="/shop">
-                            T &amp; Cs
+                            T/Cs
                         </Link>
                         </li>
                         <li className="">
