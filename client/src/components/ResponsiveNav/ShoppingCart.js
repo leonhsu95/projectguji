@@ -10,8 +10,11 @@ import Auth from '../../utils/auth';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import { BiCartAlt } from "react-icons/bi";
 import styled from 'styled-components';
-// import './style.css';
 
+// const dotenv = require('dotenv');
+
+// import './style.css';
+// console.log(process.env.REACT_APP_STRIPE_KEY);
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const CartIcon = styled(BiCartAlt)`

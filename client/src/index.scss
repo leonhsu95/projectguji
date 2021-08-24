@@ -49,16 +49,16 @@ header{
 
 .template{
   margin: 0 auto;  
-  max-width: 1200px;
+  max-width: 1280px;
   height: 610px;
 }
 
 
 /*------------------------------MOBILE--------------------------------*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1279px) {
   .template{
     margin: 0 auto;  
-    max-width: 1200px;
+    max-width: 1279px;
     height: 610px;
     padding: 0 20px;
 
@@ -653,7 +653,7 @@ header{
 
 
 /*------------------------------DESKTOP--------------------------------*/
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1280px) {
   .responsive{
     display: none;
   }

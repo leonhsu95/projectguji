@@ -1,11 +1,11 @@
 import React from 'react';
-// import Coffee from "../Media/frenchpress.gif";
+import Coffee from "../Media/frenchpress.gif";
 import Video from "../Media/coffee.mp4";
 // import Background from "../Media/background.png";
 import HomePic from "../Photos/the-cold-drip1.png"
-import Background from "../Media/background.png";
 
-function Hero(){
+
+function HeroBanner(){
     return (
     <>
         <div className="desktop">
@@ -27,18 +27,17 @@ function Hero(){
                     <img src={HomePic} alt="The Cold Drip"></img>
                 </div>
                 <div className="hero-right">
-                    {/* <div className="video-bg">
-                        
+                    <div className="video-bg">
+                        {/* <img id="background" src={Coffee} alt="background"></img> */}
                         <video autoPlay loop muted>
                             <source src={Video} type="video/mp4">
                             </source>
                         </video>
-                    </div> */}
-                    <img id="background" src={Background} alt="background"></img>
+                    </div>
                 </div>
 
             </div>    
-        </div>A
+        </div>
         <div className="responsive">
             <div className="hero">
                 <div className="hero-picture">
@@ -61,4 +60,4 @@ function Hero(){
     )
 }
 
-export default Hero;
+export default HeroBanner;
