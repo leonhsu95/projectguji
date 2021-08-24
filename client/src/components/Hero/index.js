@@ -34,11 +34,13 @@ function Hero(){
                             </source>
                         </video>
                     </div> */}
-                    <img id="background" src={Background} alt="background"></img>
+                    <div className="picture-bg"> 
+                        <img id="background" src={Background} alt="background"></img>
+                    </div>
                 </div>
 
             </div>    
-        </div>A
+        </div>
         <div className="responsive">
             <div className="hero">
                 <div className="hero-picture">
