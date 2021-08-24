@@ -824,21 +824,21 @@ header{
 
     }
 
-    // .video-bg{
-    //   z-index: -1;
-    //   width: 100%;
-    //   height: auto;
-    //   overflow: hidden;
-    //   position: relative;
-    //   opacity: 90%;
-    //   // max-width: 1700px;
+    .video-bg{
+      z-index: -1;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      position: relative;
+      // opacity: 90%;
+      // max-width: 1700px;
 
-    //     video{
-    //       width: 200%;
-    //       overflow: hidden;
-    //     }
+        video{
+          width: 150%;
+          overflow: hidden;
+        }
 
-    // }
+    }
 
   }
   

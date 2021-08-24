@@ -27,16 +27,16 @@ function Hero(){
                     <img src={HomePic} alt="The Cold Drip"></img>
                 </div>
                 <div className="hero-right">
-                    {/* <div className="video-bg">
+                    <div className="video-bg">
                         
                         <video autoPlay loop muted>
                             <source src={Video} type="video/mp4">
                             </source>
                         </video>
-                    </div> */}
-                    <div className="picture-bg"> 
-                        <img id="background" src={Background} alt="background"></img>
                     </div>
+                    {/* <div className="picture-bg"> 
+                        <img id="background" src={Background} alt="background"></img>
+                    </div> */}
                 </div>
 
             </div>    
