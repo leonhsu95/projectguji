@@ -35,32 +35,32 @@ const MobileMenu = styled.ul`
     }
 `;
 
-const Sidebar = ({open}) => {
+const Sidebar = ({open, toggle}) => {
     if (Auth.loggedIn()) {
         return(
-        <MobileMenu id="mobile-menu" open={open}>
+        <MobileMenu id="mobile-menu" open={open} onClick={toggle}>
             <li className="">
-                <Link to="/shop">
+                <Link to="/shop" onClick={toggle}>
                 Shop
                 </Link>
             </li>
             <li>
-                <Link to="/addProduct">
+                <Link to="/addProduct" onClick={toggle}>
                 Add Product
                 </Link>
             </li>
             <li className="">
-                <Link to="/template">
+                <Link to="/template" onClick={toggle}>
                 About
                 </Link>
             </li>
             <li className="">
-                <Link to="/template">
+                <Link to="/template" onClick={toggle}>
                 Contact
                 </Link>
             </li>
             <li>
-                <Link to="/orderHistory">
+                <Link to="/orderHistory" onClick={toggle}>
                     Order History
                 </Link>
                 </li>
@@ -75,27 +75,27 @@ const Sidebar = ({open}) => {
     return (
             <MobileMenu id="mobile-menu" open={open}>
             <li className="">
-                <Link to="/shop">
+                <Link to="/shop" onClick={toggle}>
                 Shop
                 </Link>
             </li>
             <li className="">
-                <Link to="/about">
+                <Link to="/template" onClick={toggle}>
                 About
                 </Link>
             </li>
             <li className="">
-                <Link to="/contact">
+                <Link to="/template" onClick={toggle}>
                 Contact
                 </Link>
             </li>
             <li className="">
-                <Link to="/signup">
+                <Link to="/signup" onClick={toggle}>
                 Sign Up
                 </Link>
             </li>
             <li className="">
-                <Link to="/login">
+                <Link to="/login" onClick={toggle}>
                 Login
                 </Link>
             </li>

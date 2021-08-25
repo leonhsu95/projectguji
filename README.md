@@ -53,6 +53,8 @@ Technologies used in this portfolio include:
 My portfolio should look like this, please do not recreate or reuse under any circumstances without permission:
 
  ![App Screenshot1](screenshots/screenshot1.png)
+ ![App Screenshot2](screenshots/screenshot2.png)
+ ![App Screenshot3](screenshots/screenshot3.png)
 
 
 ## Credits

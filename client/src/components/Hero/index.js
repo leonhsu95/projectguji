@@ -3,7 +3,7 @@ import React from 'react';
 import Video from "../Media/coffee.mp4";
 // import Background from "../Media/background.png";
 import HomePic from "../Photos/the-cold-drip1.png"
-import Background from "../Media/background.png";
+// import Background from "../Media/background.png";
 
 function Hero(){
     return (

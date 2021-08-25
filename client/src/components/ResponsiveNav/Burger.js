@@ -45,16 +45,21 @@ display: none;
 
 const Burger = () => {
     const [open, setOpen] = useState(false);
+
+    const toggle = () => {
+      setOpen(!open)
+  }
     
     return (
         <>
-        <StyledBurger id="burger" open={open} onClick={() => setOpen(!open)}>
+        {/* <StyledBurger id="burger" open={open} onClick={() => setOpen(!open)}> */}
+        <StyledBurger id="burger" open={open}  onClick={toggle}>
             <div className="burger-line"/>
             <div className="burger-line"/>
             <div className="burger-line"/>
             
         </StyledBurger>
-        < Sidebar open={open}/>
+        < Sidebar open={open} toggle={toggle}/>
         </>
     )
 }
